@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    overflow-x: hidden;
+}
+.infocontainer{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.infoCard{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px,500px));
+    grid-gap: 20px;
+    color:#fff;
+    background: #000;
+    min-height: 100%;
+    padding: 20px;
+}
+.infoCard img{
+    height:500px;
+    width: 500px;
+}
+.infoCard p{
+    height: 100%;
+    text-align: justify;
+    display: flex;
+     align-items: center;
+     padding: 10px;
+     font-size: 30px;
+     font-weight: bold;
+}
+.buttondiv button:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    gap: 20px;
+}
+
+
+.infoCard button{
+    width: 100px;
+    padding: 2px;
+    height: 50px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+.buttondiv{
+    display: flex;
+    gap: 2px;
+}
+#Like{
+   height: 30px;
+   width: 30px;
+   padding: 15px;
+   border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+   background: #fff;
+}
+@media(max-width:998px){
+   .infoCard{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+@media(max-width:558px){
+   .infoCard img{
+    height: 200px;
+    width: 200px;
+   }
+   .infoCard p{
+    font-size: 20px;
+    width: 200px;
+   }
+   .infoCard{
+   margin-top: 1
+   50px;;
+   }
+}

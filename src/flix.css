@@ -1,0 +1,225 @@
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+.Home{
+    width: 100%;
+    background-image: url('https://wpassets.brainstation.io/app/uploads/2017/04/13100509/Netflix-Background.jpg');    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buttons input{
+background: transparent;
+outline: 0;
+border: 1px solid rgb(54, 111, 111);
+padding: 25px;
+border-radius: 10px;
+color: #fff;
+
+}
+.buttons button{
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+border: 1px solid rgb(91, 194, 194);
+background:transparent;
+padding: 25px;
+z-index: 1;
+font-size: 20px;
+
+}
+.buttons input::placeholder{
+    font-size: 20px;
+}
+.buttons{
+    padding: 30px;
+}
+.buttons button:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:rgb(39, 35, 173);
+    top:0;
+    left: 0;
+    border-radius: 8px;
+    transform: translateX(-300px);
+    z-index: -1;
+}
+.buttons button:hover::after{
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+.content{
+background: #000000bd;
+height: 100%;
+width: 100%;
+padding-top: 20%;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+}
+.content h3{
+    font-size: 50px;
+}
+.content p{
+    font-size: 40px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 30px;
+    align-items: center;
+}
+nav h1{
+    color: cyan;
+    margin-left: 30px;
+}
+nav button{
+    margin-right: 30px;font-size: 20px;
+}
+
+.section2{
+display: flex;
+justify-content: space-evenly;
+gap: 20px;
+align-items: center;
+padding: 200px;
+background: #fff;
+color: black;
+font-size: 25px;
+box-shadow: inset 0 0 20px 0 black;
+}
+.avatar{
+height: 180px;
+width: 180px;
+border-radius: 20px;
+
+}
+.avatar img{
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 ;
+}
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7%;
+    color: #fff;
+    background: #000;
+
+}
+
+.section3 img{
+    height: 260px;
+    width: 200px;
+    border-radius: 20px;
+
+
+}
+
+.section3 span{
+    width: 300px;
+    font-size: 20px;
+}
+nav button{
+    background: royalblue;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+@media (max-width:668px) {
+    nav{
+      flex-direction: column;
+      align-items: start;
+      padding:10px;
+      padding-left: 20px;
+      gap: 10px;
+    }
+    nav h1{
+        margin-left: 0;
+        font-size: 15px;
+    }
+    nav button{
+        background: royalblue;
+        padding: 5px;
+        border-radius: 2px;
+        font-size:5px ;
+        font-weight: bold;
+    }
+    .content h3{
+        margin-top: 30px;
+    }
+    .content p{
+      font-size: 10px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+  .buttons button{
+    padding: 10px;
+    font-size: 10px;
+  }
+  .buttons input{
+    padding: 10px;
+    width: 100px;
+  }
+  .buttons input::placeholder{
+    font-size: 10px;
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section2{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+.section2 h2{
+font-size: 20px;
+width: 300px;
+text-align: center;
+}
+.avatar{
+    height: 100px;
+    width: 100px;
+}
+.section3{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 40px;
+}
+.section3 span{
+    margin: 20px;
+
+}
+.section3 p{
+    margin-top: 20px;
+}
+.section3 img{
+    height: 300px;
+
+}
+
+  }
